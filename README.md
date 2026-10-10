@@ -1,0 +1,2 @@
+# smart-teacher-static
+Tea
