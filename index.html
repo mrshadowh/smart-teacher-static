@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المعلم الذكي</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <span class="logo">AI</span>
+        <span>المعلم الذكي</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>المعلم الذكي</h1>
+        <p>حل المسائل بسهولة من خلال رفع صورة</p>
+        <a href="#demo" class="btn">ابدأ الآن</a>
+      </div>
+    </section>
+
+    <section id="demo" class="demo">
+      <div class="container">
+        <h2>اختر الصف والسنة</h2>
+
+        <label>المرحلة</label>
+        <div class="chips">
+          <button class="chip active" data-stage="primary">ابتدائي</button>
+          <button class="chip" data-stage="middle">إعدادي</button>
+          <button class="chip" data-stage="secondary">ثانوي</button>
+        </div>
+
+        <label>السنة</label>
+        <select id="grade">
+          <option value="1">السنة 1</option>
+          <option value="2">السنة 2</option>
+          <option value="3">السنة 3</option>
+          <option value="4">السنة 4</option>
+          <option value="5">السنة 5</option>
+          <option value="6">السنة 6</option>
+        </select>
+
+        <label>ارفع صورة</label>
+        <input type="file" id="imageUpload" accept="image/*" />
+        <div id="preview"></div>
+
+        <button id="solveBtn" class="btn">حل السؤال</button>
+
+        <div id="result" class="result">
+          <h3>النتيجة</h3>
+          <p id="answer">الحل سيظهر هنا</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
